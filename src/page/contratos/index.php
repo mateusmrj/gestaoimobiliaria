@@ -17,7 +17,7 @@
 	</div>
 </header>
 
-<?php var_dump($_SESSION['message']); if (!empty($_SESSION['message'])) : ?>
+<?php if (!empty($_SESSION['message'])) : ?>
 	<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
 		<button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		<?php echo $_SESSION['message']; ?>

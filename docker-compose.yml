@@ -12,8 +12,6 @@ services:
     volumes:
       - ./src:/var/www
       - ./log:/var/log/nginx
-#    env_file:
-#      - ./src/.env
     networks:
       - vista
   adminer:
